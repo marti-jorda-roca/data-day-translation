@@ -1,0 +1,5 @@
+streamlit
+boto3
+watchdog
+sagemaker==2.104.0
+EasyNMT
