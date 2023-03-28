@@ -8,6 +8,11 @@ from model import TranslateModel, HelsinkiItc, FacebookMbart, AwsTranslate, Lang
 
 
 def load_models() -> List[TranslateModel]:
+    """Load the models to compare.
+
+    Returns:
+        List[TranslateModel]: The list of models.
+    """
     return [
         HelsinkiItc(),
         FacebookMbart(),
@@ -27,7 +32,7 @@ def main() -> None:
 
     text_input = st.text_area(
         "Text to translate",
-        value="Particular. Vendo Scooter comprada nueva en 2010, "
+        value="Vendo Scooter comprada nueva en 2010, "
               "solo un propietario, excelente estado, "
               "con todas sus correspondientes revisiones y Libro de Revisiones, "
               "ultima revisión el pasado 24 ABR 2023, con zapata freno trasero nuevo."
